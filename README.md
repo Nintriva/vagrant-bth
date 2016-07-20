@@ -12,7 +12,7 @@ vagrant up
 
 `cd awesome`
 
-`git checkout develop'
+`git checkout develop`
 
 #Copy data to vacant root folder
 
