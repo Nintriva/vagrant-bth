@@ -100,3 +100,7 @@ params.php
 `vagrant suspend`
 
 `vagrant resume`
+
+#Cronjob
+`php yii client/index; php yii mail/delegate-feedback-reminder; php yii mail/read-client; php yii mail/read-trainer; php yii rating/index; php yii solr/index;`
+
