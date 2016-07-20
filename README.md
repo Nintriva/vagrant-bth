@@ -57,10 +57,18 @@ params.php
 #Solr Update
 /opt/solr/solr-4.10.2/bin/solr stop -all
 
-mkdir /usr/java
+// mkdir /usr/java
 
-ln -s /usr/lib/jvm/java-7-openjdk-amd64 /usr/java/default
+// ln -s /usr/lib/jvm/java-7-openjdk-amd64 /usr/java/default
 
+sudo add-apt-repository ppa:openjdk-r/ppa
+
+sudo apt-get update
+
+sudo apt-get install openjdk-8-jdk
+
+// sudo update-alternatives --config java
+// sudo update-alternatives --config javac
 cd /opt
 
 wget http://archive.apache.org/dist/lucene/solr/6.0.0/solr-6.0.0.tgz
