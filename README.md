@@ -28,7 +28,7 @@ sudo service php5-fpm restart
 composer global require "fxp/composer-asset-plugin:~1.1.1"
 composer install
 php init
-#Git-token (https://github.com/settings/tokens)  e84574444787bade45611d1851f00634243ef3a9
+#You may need Git OAuth token (https://github.com/settings/tokens)
 
 #Import Data
 cd /var/www/awesome/data
