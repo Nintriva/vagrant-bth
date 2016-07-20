@@ -8,39 +8,28 @@ vagrant up
 
 
 #Go to vagrant root folder & clone to awesome folder
-git clone git@github.com:Nintriva/businesstrainerhub.git awesome
-
-cd awesome/
-
-git checkout develop
-
+`git clone git@github.com:Nintriva/businesstrainerhub.git awesome`
+`cd awesome/`
+`git checkout develop'
 
 #Copy data to vacant root folder
 
 
 #Login to vagrant root
-vagrant ssh
-
-cd /var/www/awesome
-
-export LC_ALL=C
-
-sudo apt-get install -y autoconf g++ make openssl libssl-dev libcurl4-openssl-dev pkg-config libsasl2-dev libpcre3-dev
-
-sudo pecl install mongo
+`vagrant ssh`
+`cd /var/www/awesome`
+`export LC_ALL=C`
+`sudo apt-get install -y autoconf g++ make openssl libssl-dev libcurl4-openssl-dev pkg-config libsasl2-dev libpcre3-dev`
+`sudo pecl install mongo`
 
 #Copy Mongo
 extension=mongo.so //(/etc/php5/mods-available/mongodb.ini)
 
-sudo /etc/init.d/apache2 restart
-
-sudo service php5-fpm restart
-
-composer global require "fxp/composer-asset-plugin:~1.1.1"
-
-composer install
-
-php init
+`sudo /etc/init.d/apache2 restart`
+`sudo service php5-fpm restart`
+`composer global require "fxp/composer-asset-plugin:~1.1.1"`
+`composer install`
+`php init`
 
 
 #You may need Git OAuth token (https://github.com/settings/tokens)
