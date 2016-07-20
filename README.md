@@ -95,3 +95,8 @@ params.php
      "multiValued":false,
      "stored":true }
 }' http://localhost:8984/solr/businesstrainerhub/schema`
+
+#Suspend & Resume
+`vagrant suspend`
+
+`vagrant resume`
