@@ -25,6 +25,12 @@ vagrant up
 
 `export LC_ALL=C`
 
+`locale`
+
+`sudo locale-gen "en_US.UTF-8"`
+
+`sudo dpkg-reconfigure locales`
+
 `sudo apt-get install -y autoconf g++ make openssl libssl-dev libcurl4-openssl-dev pkg-config libsasl2-dev libpcre3-dev`
 
 `sudo pecl install mongo`
