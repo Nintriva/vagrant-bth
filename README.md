@@ -44,6 +44,12 @@ extension=mongo.so //(/etc/php5/mods-available/mongodb.ini)
 
 `sudo service php5-fpm restart`
 
+`sudo touch /var/run/mongod.pid`
+
+`sudo chown mongodb:mongodb /var/run/mongod.pid`
+
+`sudo service mongod restart`
+
 `composer global require "fxp/composer-asset-plugin:~1.1.1"`
 
 `composer install`
