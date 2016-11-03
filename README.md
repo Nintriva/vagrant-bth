@@ -85,7 +85,9 @@ params.php
 
 `tar -xvf solr-6.0.0.tgz`
 
-`cp -R solr-6.0.0 /opt/solr`
+//cp -R solr-6.0.0 /opt/solr
+
+`cp -R solr-6.0.0/. /opt/solr`
 
 `cd /opt/solr`
 
